@@ -9,9 +9,9 @@ st.title("Travel Emissions Calculator")
 st.write("'We can prepare ourselves, and our families for the changes we're seeing.. more words ' \n\n — Per Espen Stoknes")
 st.text("This app will allow you to enter miles traveled and tell you CO2e emissions more words")
 
-options = st.multiselect(
-    'What modes of transportation did you use',
-    ['Personal vehicle', 'Bus (not including your own personal bus)', 'Flight', 'Rail', 'Boat'])
+options = st.multiselect(label = 'What modes of transportation did you use?', 
+                         options = ['Personal vehicle', 'Bus (not including your own personal bus)', 'Flight', 'Rail', 'Boat']
+                        )
 
 st.write('You selected:', options)
 
