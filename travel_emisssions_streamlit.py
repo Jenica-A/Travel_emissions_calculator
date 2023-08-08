@@ -11,7 +11,7 @@ st.write("'We can prepare ourselves, and our families for the changes we're seei
 
 st.text("This app will allow you to enter miles traveled and tell you CO2e emissions more words")
 
-miles = st.number_input(label = "Insert the distance traveled in miles", min_value = 0, max_value = 5000)
+miles = st.number_input(label = "Insert the distance traveled in miles", min_value = 0, max_value = 10000)
 st.write('The current distance is ', miles)
 def emiss_calc(miles):
     co2 = miles * 404
