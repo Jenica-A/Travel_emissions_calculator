@@ -26,7 +26,7 @@ Back end: This project will use python and Jupyter notebooks. I will search for 
 Front end: streamlit will be used for the UI
 
 **Communications:**  
-This will be shared to my github and the streamlit app [link](www.google.com) will be circulated. Eventually, hosting this calculator somewhere more stable, robust, dynamic than streamlit would be good. 
+This will be shared to my github and the streamlit app [test link](www.google.com) will be circulated. Eventually, hosting this calculator somewhere more stable, robust, dynamic than streamlit would be good. 
 
 **MVP:**   
 The minimum viable product for this project is an emissions calculation in streamlit based only on miles driven
