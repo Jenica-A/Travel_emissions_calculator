@@ -51,15 +51,4 @@ if selected_vehicle == "Personal Vehicle":
                 emissions = calculate_personal_vehicle_emissions(fuel_type, fuel_efficiency, occupancy, distance_traveled, vehicle_age)
                 st.write(f"CO2e Emissions: {emissions:.2f} metric tons")
     
-"""
-elif selected_vehicle == "Plane":
-    # Add code to calculate plane emissions
-    
-elif selected_vehicle == "Boat":
-    # Add code to calculate boat emissions
-    
-elif selected_vehicle == "Commercial Bus":
-    # Add code to calculate commercial bus emissions
-    
-elif selected_vehicle == "Rail":
-    # Add code to calculate rail emissions
+
