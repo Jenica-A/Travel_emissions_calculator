@@ -16,6 +16,8 @@ options = st.multiselect(label = 'What modes of transportation did you use?',
 st.write('You selected:', options)
 
 if options == 'Personal vehicle':
+   st.write("pass test") 
+"""
     miles = st.number_input(label = "Insert the distance traveled in miles", min_value = 0, max_value = 10000)
 st.write('The current distance is ', miles)
 def emiss_calc(miles):
