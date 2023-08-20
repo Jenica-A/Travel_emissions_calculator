@@ -6,8 +6,8 @@ Streamlit Interactive Plot
 import streamlit as st
 
 st.title("Travel Emissions Calculator")
-st.write("'We can prepare ourselves, and our families for the changes we're seeing.. more words ' \n\n — Per Espen Stoknes")
-st.text("This app will allow you to enter miles traveled and tell you CO2e emissions more words")
+st.write("'It's a team, really: the wilderness and us.' \n\n — Per Espen Stoknes")
+st.text("This app will allow you to enter vehicle miles traveled and tell you the CO2e emissions associated with your trip.")
 
 options = st.multiselect(label = 'What modes of transportation did you use?', 
                          options = ['Personal vehicle', 'Bus (not including your own personal bus)', 'Flight', 'Rail', 'Boat']
