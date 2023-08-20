@@ -3,10 +3,17 @@ Planning for calculator:
 Vehicle type:
   Plane
     First leg
-      Distance
-    Next leg
-    Done
+      Type of plane
+        Class of seat
+          Distance
+    Next leg (repeat until done)
+      Type of plane
+        Class of seat
+          Distance
   Personal vehicle
+    First leg
+      Type of vehicle
+        Occupancy
   Boat
   Rail
   Bus
