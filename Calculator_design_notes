@@ -1,5 +1,8 @@
 Planning for calculator:
 
+These will be drop-down options that users can select, with subsequent questions containing more drop-downs and/or boxes for entering numerical values. 
+On the back end, the model will take in these inputs and perform calculations. Results will be shown in the app.
+
 Vehicle type:
   Plane
     First leg
@@ -12,9 +15,22 @@ Vehicle type:
           Distance
   Personal vehicle
     First leg
-      Type of vehicle
-        Occupancy
+      Type of vehicle (car, SUV, truck (not freight or U Haul style), RV, bus)
+        Fuel type
+          Towing? (yes or no)
+            Approx mpg
+              Occupancy
+                Vehicle year
+                  Approx hours idling or in very slow traffic?
+    Next leg (add legs until done and returned "home")
+      Type of vehicle (car, SUV, truck (not freight or U Haul style), RV, bus)
+        Fuel type
+          Towing? (yes or no)
+            Approx mpg
+              Occupancy
+                Vehicle year
+                  Approx hours idling or in very slow traffic?
   Boat
   Rail
-  Bus
-  
+  Cmmercial Bus
+  Other?
