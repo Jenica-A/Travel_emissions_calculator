@@ -1,15 +1,5 @@
 import streamlit as st
 
-st.title("Travel Emissions Calculator")
-st.write("'It's a team, really: the wilderness and us.' \n\n — Per Espen Stoknes")
-st.text("This app will allow you to enter vehicle miles traveled and \n\n report to you the CO2e emissions associated with your travel.")
-
-options = st.multiselect(label='What modes of transportation did you use?',
-                         options=['Personal vehicle', 'Bus (not including your own personal bus)', 'Flight', 'Rail', 'Boat']
-                        )
-
-st.write('You selected:', options)
-
 # Function to calculate emissions for personal vehicle - car/SUV/truck
 def calculate_personal_vehicle_emissions(fuel_type, fuel_efficiency, occupancy, distance_traveled, vehicle_age):
     # Emission factors in kg CO2e per mile for different fuel types
@@ -28,6 +18,8 @@ def calculate_personal_vehicle_emissions(fuel_type, fuel_efficiency, occupancy, 
 
 # Streamlit app
 st.title("CO2e Emissions Calculator")
+st.write("'It's a team, really: the wilderness and us.' \n\n — Per Espen Stoknes")
+st.text("This app will allow you to enter vehicle miles traveled and \n\n report to you the CO2e emissions associated with your travel.")
 
 vehicle_options = ["Personal Vehicle", "Plane", "Boat", "Commercial Bus", "Rail"]
 selected_vehicle = st.selectbox("Select a vehicle type:", vehicle_options)
