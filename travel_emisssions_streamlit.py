@@ -31,3 +31,4 @@ co2_t = round((co2_g / 907200),3)
 
 
 st.write('CO2 emissions for a',miles,'mi trip is',co2_g,'g or',co2_t,'tons.')
+"""
