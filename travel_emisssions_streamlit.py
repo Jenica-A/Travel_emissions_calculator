@@ -19,8 +19,7 @@ def calculate_personal_vehicle_emissions(fuel_type, fuel_efficiency, occupancy, 
 # Streamlit app
 st.title("CO2e Emissions Calculator")
 st.write("'It's a team, really: the wilderness and us.' \n\n — Per Espen Stoknes")
-st.text("This app will allow you to enter vehicle miles traveled and \n\n report to you the CO2e emissions associated with your travel. \n\n
-PLEASE NOTE: Results are not accurate IN THIS CURRENT STATE. Place-holder equations \n\n are used on the back-end while the app is being built.")
+st.text("This app will allow you to enter vehicle miles traveled and \n\n report to you the CO2e emissions associated with your travel. \n\n PLEASE NOTE: Results are not accurate IN THIS CURRENT STATE. Place-holder equations \n\n are used on the back-end while the app is being built.")
 
 vehicle_options = ["Personal Vehicle", "Plane", "Boat", "Commercial Bus", "Rail"]
 selected_vehicle = st.selectbox("Select a vehicle type:", vehicle_options)
