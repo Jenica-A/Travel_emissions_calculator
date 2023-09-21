@@ -20,7 +20,7 @@ def calculate_flight_emissions(aviation_fuel_type, av_fuel_efficiency, plane_occ
     flight_EMISSION_FACTORS = {
         "Aviation Gas": 20,  # !!!Placeholder values. Replace with actual values
         "Jet Fuel": 22,
-        "Other": 22
+        "Other": 22,
         "Not sure": 22
     }
     
