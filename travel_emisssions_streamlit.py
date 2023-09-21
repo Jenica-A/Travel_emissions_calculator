@@ -57,6 +57,7 @@ if selected_vehicle == "Personal Vehicle":
             if st.button("Calculate Emissions"):
                 emissions = calculate_personal_vehicle_emissions(fuel_type, fuel_efficiency, occupancy, distance_traveled, vehicle_age)
                 st.write(f"CO2e Emissions: {emissions:.2f} metric tons")
+st.write("This is a work in progress. Numbers are not actual results.")
 
 if selected_vehicle == "Plane":
     plane_options = ["Private", "Commercial", "Burner Express Air"]
@@ -73,10 +74,8 @@ if selected_vehicle == "Plane":
             distance_flown = st.number_input("Enter distance flown (miles):", min_value=0.1)
             plane_age = st.number_input("Enter age of plane (years):", min_value=0, step=1)
             
-            if st.button("Calculate Emissions"):
-                emissions = calculate_personal_vehicle_emissions(fuel_type, fuel_efficiency, occupancy, distance_traveled, vehicle_age)
+            if st.button("Calculate Flight Emissions"):
                 flight_emissions = calculate_flight_emissions(aviation_fuel_type, av_fuel_efficiency, plane_occupancy, distance_flown, plane_age)
-                st.write(f"CO2e Emissions: {emissions:.2f} metric tons")
                 st.write(f"CO2e Emissions: {flight_emissions:.2f} metric tons")
-st.write("This is a work in progress. Numbers are not actual results.")
+
 
