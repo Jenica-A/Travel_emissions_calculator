@@ -8,12 +8,27 @@ def calculate_personal_vehicle_emissions(fuel_type, fuel_efficiency, occupancy, 
         "diesel": 22.2,
         "R99 renewable diesel": 18.8
     }
+    emission_factor = EMISSION_FACTORS.get(fuel_type, 0)
+    if emission_factor == 0:
+        return 0
+    
+    emissions = (distance_traveled / fuel_efficiency) / occupancy * (emission_factor / 1000) * vehicle_age
+    return emissions
+    
+def calculate_flight_emissions(aviation_fuel_type, av_fuel_efficiency, plane_occupancy, distance_flown, plane_age):
+    # Emission factors in kg CO2e per mile for different fuel types
+    EMISSION_FACTORS = {
+        "gasoline": 19.6,  # Example values, actual values may vary
+        "diesel": 22.2,
+        "R99 renewable diesel": 18.8
+    }
     
     emission_factor = EMISSION_FACTORS.get(fuel_type, 0)
     if emission_factor == 0:
         return 0
     
-    emissions = (distance_traveled / fuel_efficiency) * occupancy * (emission_factor / 1000) * vehicle_age
+    emissions = (distance_traveled / fuel_efficiency) / occupancy * (emission_factor / 1000) * vehicle_age
+    flight_emissions = (distance_flown / av_fuel_efficiency) / plane_occupancy * (emission_factor / 1000) * plane_age
     return emissions
 
 # Streamlit app
@@ -45,21 +60,21 @@ if selected_vehicle == "Personal Vehicle":
 
 if selected_vehicle == "Plane":
     plane_options = ["Private", "Commercial", "Burner Express Air"]
-    selected_personal_vehicle = st.selectbox("Select a personal vehicle type:", personal_vehicle_options)
+    selected_plane = st.selectbox("Select a plane type:", plane_options)
     
-    if selected_personal_vehicle in ["car/SUV/truck", "RV"]:
-        fuel_type = st.selectbox("Select fuel type:", ["gasoline", "diesel", "R99 renewable diesel", "other"])
+    if selected_plane == "Private":
+        aviation_fuel_type = st.selectbox("Select aviation fuel type:", ["Aviation Gas", "Jet Fuel", "Other", "Not sure"])
         
-        if fuel_type == "other":
+        if aviation_fuel_type == "other":
             st.write("Sorry, at this time our calculator does not produce emissions calculations for other fuels.")
         else:
-            fuel_efficiency = st.number_input("Enter vehicle fuel efficiency (miles per gallon):", min_value=0.1)
+            av_fuel_efficiency = st.number_input("Enter plane fuel efficiency (miles per gallon):", min_value=0.1)
             occupancy = st.number_input("Enter passenger occupancy:", min_value=1, step=1)
-            distance_traveled = st.number_input("Enter distance traveled (miles):", min_value=0.1)
-            vehicle_age = st.number_input("Enter vehicle age (years):", min_value=0, step=1)
+            distance_flown = st.number_input("Enter distance flown (miles):", min_value=0.1)
+            plane_age = st.number_input("Enter age of plane (years):", min_value=0, step=1)
             
             if st.button("Calculate Emissions"):
                 emissions = calculate_personal_vehicle_emissions(fuel_type, fuel_efficiency, occupancy, distance_traveled, vehicle_age)
                 st.write(f"CO2e Emissions: {emissions:.2f} metric tons")
-    
+st.write("This is a work in progress. Numbers are not actual results.")
 
