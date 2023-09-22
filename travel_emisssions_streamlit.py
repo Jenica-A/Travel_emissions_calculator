@@ -2,11 +2,11 @@ import streamlit as st
 
 # Function to calculate emissions for personal vehicle - car/SUV/truck
 def calculate_personal_vehicle_emissions(fuel_type, fuel_efficiency, occupancy, distance_traveled, vehicle_age):
-    # Emission factors in kg CO2e per mile for different fuel types
+    # Emission factors in kg CO2e per gal for different fuel types
     EMISSION_FACTORS = {
-        "gasoline": 19.6,  # Example values, actual values may vary
-        "diesel": 22.2,
-        "R99 renewable diesel": 18.8
+        "gasoline": 8.78,  # Example values, actual values may vary
+        "diesel": 10.21,
+        "R99 renewable diesel": 11.000 # This is not an accurate value. Also neec CH4 and NO2
     }
     emission_factor = EMISSION_FACTORS.get(fuel_type, 0)
     if emission_factor == 0:
