@@ -77,4 +77,3 @@ if selected_vehicle == "Plane":
             if st.button("Calculate Flight Emissions"):
                 flight_emissions = calculate_flight_emissions(aviation_fuel_type, av_fuel_efficiency, plane_occupancy, distance_flown, plane_age)
                 st.write(f"CO2e Emissions: {flight_emissions:.2f} metric tons")
-
