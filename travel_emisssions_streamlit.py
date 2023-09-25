@@ -29,7 +29,7 @@ def calculate_flight_emissions(aviation_fuel_type, av_fuel_efficiency, plane_occ
         return 0
     
     flight_emissions = (distance_flown / av_fuel_efficiency) / plane_occupancy * (flight_emission_factor / 1000) * plane_age
-    return emissions
+    return flight_emissions 
 
 # Streamlit app
 st.title("CO2e Emissions Calculator")
