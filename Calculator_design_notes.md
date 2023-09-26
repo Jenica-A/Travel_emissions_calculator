@@ -1,9 +1,10 @@
 Planning for calculator:
 
 Outline:
-How many legs did your journey to BRC have? ```dropdown with multiple choice, once selected, questionnaire has dropdown questions for each leg ```
-How many legs did your return trip have?
-First leg to BRC
+**How many legs did your journey to BRC have?** ```dropdown with multiple choice. Once selected, questionnaire populates with dropdown questions for each outbound leg ```    
+**How many legs did your return trip have?** ``` similar to above. Dropdown multiple choice response populates questionnaire with that number of home-bound legs ````
+**First leg travel to BRC mode of transportation** ``` multiple choice drop down: road travel, rail travel, air travel, water travel ```
+
 Second leg to BRC
 Third leg to BRC
 
