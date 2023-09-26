@@ -1,17 +1,12 @@
 Planning for calculator:
 
 Outline:
-How many legs did your journey to BRC have?
+How many legs did your journey to BRC have? ```dropdown with multiple choice, once selected, questionnaire has dropdown questions for each leg ```
 How many legs did your return trip have?
 First leg to BRC
 Second leg to BRC
 Third leg to BRC
 
-```ruby
-require 'redcarpet'
-markdown = Redcarpet.new("Hello World!")
-puts markdown.to_html
-```
 
 Flights
 Road-travel
