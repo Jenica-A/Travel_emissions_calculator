@@ -1,6 +1,18 @@
 Planning for calculator:
 
-Major topics for calculating travel emissions:
+Outline:
+How many legs did your journey to BRC have?
+How many legs did your return trip have?
+First leg to BRC
+Second leg to BRC
+Third leg to BRC
+
+```ruby
+require 'redcarpet'
+markdown = Redcarpet.new("Hello World!")
+puts markdown.to_html
+```
+
 Flights
 Road-travel
 Rail-travel
@@ -38,8 +50,9 @@ Vehicle type:
               Occupancy
                 Vehicle year
                   Approx hours idling or in very slow traffic?
-  ...Continue here, Jenica*
+  
+At the end, sum all of the above emissions. 
   Boat
   Rail
   Commercial Bus
-  Other?
+  At the end, offer results based on other methods (Did you know if you took the rail, your trip would have emitted x co2? Burner express would have emitted Y CO2.
