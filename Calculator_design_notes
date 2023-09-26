@@ -1,5 +1,13 @@
 Planning for calculator:
 
+Major topics for calculating travel emissions:
+Flights
+Road-travel
+Rail-travel
+
+
+Should we include hotels?
+
 These will be drop-down options that users can select, with subsequent questions containing more drop-downs and/or boxes for entering numerical values. 
 On the back end, the model will take in these inputs and perform calculations. Results will be shown in the app.
 
