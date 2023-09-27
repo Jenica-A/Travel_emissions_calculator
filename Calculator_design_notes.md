@@ -57,3 +57,80 @@ At the end, sum all of the above emissions.
   Rail
   Commercial Bus
   At the end, offer results based on other methods (Did you know if you took the rail, your trip would have emitted x co2? Burner express would have emitted Y CO2.
+
+
+
+
+## From ChatGPT
+Creating a travel emissions calculator for Burning Man participants involves several steps to estimate the carbon dioxide equivalent (CO2e) emissions from their round trip journey, considering flight layovers and other modes of transportation. Here's an outline of the parts of the calculator and a summary of the Python code needed for each step:
+
+1. **User Input and Setup:**
+   - Collect user input for trip details:
+     - Departure and destination locations
+     - Mode of transportation (e.g., car, plane)
+     - Number of travelers
+     - Distance if driving or flight information if flying (e.g., direct flight or layovers)
+   - Set up constants for emission factors (e.g., CO2e per mile for cars, flights, layovers).
+
+   ```python
+   # Collect user input
+   departure_location = input("Enter departure location: ")
+   destination_location = input("Enter destination location: ")
+   mode_of_transportation = input("Enter mode of transportation (car, plane, etc.): ")
+   num_travelers = int(input("Enter the number of travelers: "))
+   distance = float(input("Enter the distance (in miles or equivalent): "))
+   ```
+
+2. **Calculate Emissions for Each Leg:**
+   - Calculate emissions for each leg of the journey (e.g., driving to the airport, each flight segment, layovers, driving to Burning Man).
+   - Account for the number of travelers.
+
+   ```python
+   # Calculate emissions for each leg
+   emissions_driving_to_airport = distance * emission_factor_car * num_travelers
+   emissions_flight_segments = sum([distance_segment * emission_factor_flight for distance_segment in flight_distances])
+   emissions_layovers = num_layovers * emission_factor_layover * num_travelers
+   emissions_driving_to_event = event_distance * emission_factor_car * num_travelers
+   ```
+
+3. **Sum Total Emissions:**
+   - Sum the emissions from all legs to get the total CO2e emissions for the round trip.
+
+   ```python
+   total_emissions = (emissions_driving_to_airport +
+                      emissions_flight_segments +
+                      emissions_layovers +
+                      emissions_driving_to_event)
+   ```
+
+4. **Display Results:**
+   - Present the calculated emissions to the user in a user-friendly format.
+
+   ```python
+   print(f"Total CO2e emissions for the round trip: {total_emissions} kg CO2e")
+   ```
+
+5. **Optional: Emission Offset Information:**
+   - Provide information on emission offset programs or suggestions for reducing emissions.
+
+   ```python
+   offset_programs = get_offset_programs(destination_location)
+   print("Consider offsetting your emissions with the following programs:")
+   for program in offset_programs:
+       print(program)
+   ```
+
+6. **Error Handling:**
+   - Include error handling to handle invalid user input and edge cases.
+
+   ```python
+   try:
+       # Input collection and calculations here
+   except ValueError:
+       print("Invalid input. Please enter valid numerical values.")
+   ```
+
+7. **Optional: Interactive UI (e.g., web app):**
+   - If desired, create a graphical user interface (GUI) for a more user-friendly experience using libraries like Flask or Django.
+
+This outline provides a structured approach to building a travel emissions calculator for Burning Man participants, taking into account various modes of transportation, flight layovers, and other legs of the journey. You can implement each step using Python code and create a user-friendly tool to help participants estimate their carbon emissions.
