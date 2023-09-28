@@ -132,5 +132,3 @@ Creating a travel emissions calculator for Burning Man participants involves sev
 
 7. **Optional: Interactive UI (e.g., web app):**
    - If desired, create a graphical user interface (GUI) for a more user-friendly experience using libraries like Flask or Django.
-
-This outline provides a structured approach to building a travel emissions calculator for Burning Man participants, taking into account various modes of transportation, flight layovers, and other legs of the journey. You can implement each step using Python code and create a user-friendly tool to help participants estimate their carbon emissions.
