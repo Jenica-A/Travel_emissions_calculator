@@ -5,10 +5,10 @@ Outline:
 **How many legs did your return trip have?** ``` Similar to above. Dropdown multiple choice response populates questionnaire with that number of home-bound legs ```    
 **First leg travel to BRC mode of transportation** ``` Multiple choice drop down: road travel, rail travel, air travel, water travel ```    
 
-| Mode of Travel | Vehicle Options | Further Questions
-| ----------- | ----------- |
-| Header      | Title       |
-| Paragraph   | Text        | 
+| Mode of Travel | Vehicle Options | 
+| ----------- | ----------- |   
+| Header      | Title       |   
+| Paragraph   | Text        |    
 
 Second leg to BRC
 Third leg to BRC
