@@ -1,7 +1,7 @@
 # Travel_emissions_calculator
 
 Abstract:
-    Emissions from travel are a major source of ghg emissions in Burning Man's ghg profile. To fix it, we must know it and track it. This project is a calculator for participants, staff an outside venders to use to track their emissoins. 
+    Emissions from travel are a major source of greenhouse gas (ghg) emissions in Burning Man's ghg profile. To fix it, we must know it and track it. This project is a calculator for participants, staff and outside venders to use to track their emissoins. 
 
 **Design:**  
 This project will perform emissions calculations and report them in Streamlit.
