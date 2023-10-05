@@ -109,7 +109,9 @@ Creating a travel emissions calculator for Burning Man participants involves sev
    ```python
    print(f"Total CO2e emissions for the round trip: {total_emissions} kg CO2e")
    ```
-
+4a. **Data Import** 
+    - Data is imported to mysql db hosted on AWS and authenticated to burning man profile
+    
 5. **Optional: Emission Offset Information:**
    - Provide information on emission offset programs or suggestions for reducing emissions.
 
