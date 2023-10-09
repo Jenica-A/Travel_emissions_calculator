@@ -1,6 +1,10 @@
 Planning for calculator:
 
 Outline:    
+Jenica you want specific data! You may need to let some of it go. Simplify,
+**Did your journey to the event have the same number of legs as your journey home?** Define leg as a portion of your travels that was different, logistically, than other portions of your trip. IE did you pick up a passenger? Use the ferry? Stay in a hotel?
+  If the answer is no, just have them fill out the one way details, then double them. If yes, open a new question about the return trip.
+  
 **How many legs did your journey to BRC have?** ```Dropdown with multiple choice. Once selected, questionnaire populates with dropdown questions for each outbound leg ```    
 **How many legs did your return trip have?** ``` Similar to above. Dropdown multiple choice response populates questionnaire with that number of home-bound legs ```    
 **First leg travel to BRC mode of transportation** ``` Multiple choice drop down: road travel, rail travel, air travel, water travel ```    
