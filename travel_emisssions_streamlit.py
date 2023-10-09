@@ -4,7 +4,7 @@ import streamlit as st
 def calculate_personal_vehicle_emissions(fuel_type, fuel_efficiency, occupancy, distance_traveled, vehicle_age):
     # Emission factors in kg CO2e per gal for different fuel types
     EMISSION_FACTORS = {
-        "gasoline": 8.78,  # Example values, actual values may vary
+        "gasoline": 8.78,  # Example values, actual values
         "diesel": 10.21,
         "R99 renewable diesel": 11.000 # This is not an accurate value. Also neec CH4 and NO2
     }
