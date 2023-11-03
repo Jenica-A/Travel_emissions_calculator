@@ -1,6 +1,7 @@
 Planning for calculator:
 
 Outline:    
+Ok, so far our work points to basically needing fuel type and volume. From there we will use generalized emissions equations, as the distincitons between emissions from different types of vehicles is fairly immaterial.
 Jenica you want specific data! You may need to let some of it go. Simplify,
 **Did your journey to the event have the same number of legs as your journey home?** Define leg as a portion of your travels that was different, logistically, than other portions of your trip. IE did you pick up a passenger? Use the ferry? Stay in a hotel?
   If the answer is no, just have them fill out the one way details, then double them. If yes, open a new question about the return trip.
