@@ -6,6 +6,7 @@ Stationary combustion and mobile combustion are the two broadest categories, fro
 For participant travel, we will ask for emissions per mile. When it comes to flights, it's a whole lot more complicated. 
 
 Simplify has been the name of the game.
+
 **Did your journey to the event have the same number of legs as your journey home?** Define leg as a portion of your travels that was different, logistically, than other portions of your trip. IE did you pick up a passenger? Use the ferry? Stay in a hotel?
   If the answer is no, just have them fill out the one way details, then double them. If yes, open a new question about the return trip.
   
@@ -15,8 +16,9 @@ Simplify has been the name of the game.
 
 | Mode of Travel | Vehicle Options | 
 | ----------- | ----------- |   
-| Header      | Title       |   
-| Paragraph   | Text        |    
+| Car      | Title       |   
+| Plane   | Text        |    
+| RV      | Title       |   
 
 Second leg to BRC
 Third leg to BRC
